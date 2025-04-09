@@ -13,11 +13,11 @@ public class LoginPageObject {
 	public LoginPageObject(WebDriver driver) {
 		this.driver=driver;
 	}
-	WebElement email= driver.findElement(By.id("email"));
-	WebElement pass= driver.findElement(By.id("pass"));
-	WebElement lgbutton= driver.findElement(By.name("login"));
+	
 	public void dologin() {
-		
+		WebElement email= driver.findElement(By.id("email"));
+		WebElement pass= driver.findElement(By.id("pass"));
+		WebElement lgbutton= driver.findElement(By.name("login"));
 		email.sendKeys("admin@123");
 		pass.sendKeys("admin123");
 		lgbutton.click();
@@ -26,7 +26,15 @@ public class LoginPageObject {
 		driver.get("https://www.facebook.com/");
 	}
 	public void lauchandlogin() {
-		
+		driver.get("https://www.facebook.com/");
+		WebElement email= driver.findElement(By.id("email"));
+		WebElement pass= driver.findElement(By.id("pass"));
+		WebElement lgbutton= driver.findElement(By.name("login"));
+		email.sendKeys("admin@123");
+		pass.sendKeys("admin123");
+		lgbutton.click();
 	}
+	
+	
 }
 
