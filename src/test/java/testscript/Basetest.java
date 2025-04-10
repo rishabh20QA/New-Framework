@@ -14,7 +14,7 @@ public class Basetest {
     	 
     	 LoginPageObject lpo= new LoginPageObject(driver);
     	 lpo.launchapp();
-    	 lpo.dologin();
+    	 lpo.dologin("admin@123", "admin123");
     	 
      }
 	}
