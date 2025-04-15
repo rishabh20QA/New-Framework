@@ -12,8 +12,8 @@ public class Abstract_component {
 	public void max() {
 		driver.manage().window().maximize();
 	}
-     public void impwait() {
-    	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+     public void impwait(int a) {
+    	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(a));
      }
      public void close() {
     	 driver.close();

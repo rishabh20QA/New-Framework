@@ -26,6 +26,7 @@ public class LoginPageObject extends Abstract_component {
 	@FindBy(name="login") WebElement lgbutton;
 	
 	public void dologin(String username, String password) {
+		
 		un.sendKeys(username);
 		pas.sendKeys(password);
 		lgbutton.click();
@@ -35,6 +36,7 @@ public class LoginPageObject extends Abstract_component {
 		
 		
 		driver.get("https://www.facebook.com/");
+		impwait(5);
 		max();
 	}
 	public void lauchandlogin() {
