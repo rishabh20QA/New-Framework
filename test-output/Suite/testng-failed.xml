@@ -8,7 +8,7 @@
     <classes>
       <class name="testscript.Basetest">
         <methods>
-          <include name="tc01"/>
+          <include name="tc03"/>
         </methods>
       </class> <!-- testscript.Basetest -->
     </classes>
